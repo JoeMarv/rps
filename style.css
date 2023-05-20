@@ -22,4 +22,83 @@ body {
     background-image: radial-gradient(var(--clr-background));
     height: 100vh;
     background-repeat: none;
+    margin: 0;
+    font-family: var(--ff);
+    font-size: 18px;
+    justify-content: center;
+    text-transform: uppercase;
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    margin: 5vh 10vw;
+    background-color: inherit;
+    height: 100%;
+    color: white
+}
+
+.scoreboard {
+    border: 2px solid var(--clr-header-outline);
+    font-weight: 600;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    border-radius: 2vw;
+    align-items: center
+}
+
+.name {
+    display: flex;
+    flex-direction: column;
+    line-height: 1.0;
+    font-size: 1.1em;
+    margin: 3vh 6vw;
+}
+
+.score {
+    background: white;
+    color: var(--clr-score-text);
+    display: flex;
+    flex-direction: column;
+    font-weight: 700;
+    padding: 1vh 7vw;
+    border-radius: 1vw;
+    margin: 0vh 3vw;
+    text-align: center;
+}
+
+.score-text {
+    font-size: 0.6em;
+    letter-spacing: 0.3vw;
+}
+
+.count {
+    color: var(--clr-dark-text);
+    font-size: 2.4em;
+}
+
+.rules {
+    display: flex;
+    flex-direction: column;
+    bottom: 93vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.rules-btn {
+    display: flex;
+    flex-direction: column;
+    text-transform: uppercase;
+    font-family: var(--ff);
+    font-weight: 600;
+    font-size: 1em;
+    letter-spacing: 0.5vw;
+    color: var(--clr-header-outline);
+    background-color: inherit;
+    border: 2px solid var(--clr-header-outline);
+    border-radius: 2vw;
+    padding: 1vh 8vw;
+    position: absolute;
+    bottom: 7.5vh;
 }
